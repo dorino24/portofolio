@@ -323,6 +323,7 @@ ul {
 	right: -100px;
 	padding: 30px;
 	display: inline-block;
+  width: 630px;
 }
 
 .home-content .left-text {     
@@ -450,7 +451,7 @@ ul {
 }
 
 .projects-content .owl-carousel {
-  margin: 0 -20%;
+  margin: 0 -30%;
   width: 160%;
 }
 
@@ -598,7 +599,17 @@ ul {
 	color: #ff6;
 }
 
-
+.projek{
+  display: flex; 
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.projek-content{
+  margin:0 10px;
+}
+.projek-content img{
+  width: 350px;
+}
 /*
 ========================================
 ---------- RESPONSIVE STYLE ------------
@@ -606,20 +617,29 @@ ul {
 */
 
 @media (max-width: 768px){
+  .projek{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .projek-content{
+    margin: 10px auto;
+  }
   .heading h4 {
     font-size: 22px;
     margin-bottom: 30px;
   }
   .home-content {
     text-align: center;
-    margin: 0 auto;
+    margin: 30px auto;
     height: auto;
     padding: 0px 30px;
-    width: 100vw;
+    width: 100%;
   }
   .home-content .home-box-content {
     right: 0;
     margin-bottom: 30px;
+    width: 100%;
   }
   .home-content h1 {
     margin-bottom: 0px;
@@ -665,7 +685,7 @@ ul {
     margin-right: 15px;
   }
   .projects-content {
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     padding: 0px 30px;
   }
@@ -673,7 +693,7 @@ ul {
     padding: 0px 120px;
   }
   .project-item img {
-    max-width: 100%;
+    max-width: 70%;
   }
   .projects-content .heading {
     padding-top: 25%;
@@ -681,9 +701,6 @@ ul {
   .projects-content .owl-carousel {
     margin: 0;
     width: 100%;
-  }
-  .projects-content .text-content {
-    display: none;
   }
   .contact-content .more-info {
     padding: 30px;
